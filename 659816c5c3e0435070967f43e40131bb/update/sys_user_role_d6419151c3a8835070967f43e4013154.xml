@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>b2snvxYwS5reWbno2A8UlWwbfw38CLtXGgixBGgu/po=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2007650_4dot_m_1.Service User</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>Service User</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 12:51:29</sys_created_on>
+        <sys_id>d6419151c3a8835070967f43e4013154</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2007650_4dot_m_1.Service User</sys_name>
+        <sys_package display_value="4Dot Machine Service" source="x_2007650_4dot_m_1">659816c5c3e0435070967f43e40131bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="4Dot Machine Service">659816c5c3e0435070967f43e40131bb</sys_scope>
+        <sys_update_name>sys_user_role_d6419151c3a8835070967f43e4013154</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 12:51:29</sys_updated_on>
+    </sys_user_role>
+</record_update>
