@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="bcf85209c3e0435070967f43e401318f" label="Vending Machine Service" max_length="40" name="x_2007650_4dot_m_1_vending_machine_service" type="collection">
+        <element label="Service Group" max_length="32" name="service_group" reference="sys_user_group" type="reference"/>
+        <element label="Date of Installation" max_length="40" name="date_of_installation" type="glide_date"/>
+        <element label="Service Notes" max_length="4000" name="service_notes" type="journal"/>
+        <element label="Location" mandatory="true" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="Last Serviced" max_length="40" name="last_serviced" type="glide_date_time"/>
+        <element choice="1" label="Ownership Type" mandatory="true" max_length="40" name="ownership_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Leased" sequence="1" value="leased"/>
+                <element inactive_on_update="false" label="Owned" sequence="0" value="owned"/>
+            </choice>
+        </element>
+        <element label="Date of Purchase" max_length="40" name="date_of_purchase" type="glide_date"/>
+        <element choice="1" label="Content Type" mandatory="true" max_length="40" name="content_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Snacks" value="snacks"/>
+                <element inactive_on_update="false" label="Food" value="foods"/>
+                <element inactive_on_update="false" label="Drinks" value="drinks"/>
+                <element inactive_on_update="false" label="Combo" value="combo"/>
+            </choice>
+        </element>
+        <element label="test1" max_length="80" name="test1" type="field_name"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="test" max_length="40" name="test" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Current Owner" mandatory="true" max_length="32" name="current_owner" reference="core_company" type="reference"/>
+        <element choice="1" label="State" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Servicing" value="pending_servicing"/>
+                <element inactive_on_update="false" label="In Stock" value="in_stock"/>
+                <element inactive_on_update="false" label="Operational" value="operational"/>
+                <element inactive_on_update="false" label="Disabled" value="disabled"/>
+                <element inactive_on_update="false" label="Refill Requested" value="refill_requested"/>
+                <element inactive_on_update="false" label="Pending Repairs" value="pending_repairs"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="current_owner"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+        <index name="index3">
+            <element name="service_group"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
